@@ -1,22 +1,30 @@
 package youDoIt;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 
 public class QuartsToGallons {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String quarts;
-		
-		Scanner input = new Scanner(System.in);
-		
-		System.out.println("how many quarts do you need?");
-		quarts = input.next();
-		
+		int QTS_IN_GALLON = 4;
+		int numberOfQuartsNeeded;
+		int numberOfGallons;
+		int numberOfQuartsLeft;
+		String numQuartsString;
 		
 		
-		System.out.println("You will need " + quarts + " and ");
+		numQuartsString = JOptionPane.showInputDialog(null, "How many quarts do you need?");
+		numberOfQuartsNeeded = Integer.parseInt(numQuartsString); 
+		
+	
+		numberOfGallons = numberOfQuartsNeeded / QTS_IN_GALLON;
+		numberOfQuartsLeft = numberOfQuartsNeeded % QTS_IN_GALLON;
+		
+		
+		JOptionPane.showMessageDialog(null, "You will need " + numberOfGallons + " gallons and " + numberOfQuartsLeft + " quarts");
+		
 		
 		
 		
