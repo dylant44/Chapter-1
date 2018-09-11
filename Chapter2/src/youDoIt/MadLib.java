@@ -23,7 +23,7 @@ public class MadLib {
 		System.out.print("Mary had a little " + noun1);
 		System.out.print(" Its " + noun2 + " was " + adjective + " as snow ");
 		System.out.print("And everwhere that Mary " + verb );
-		System.out.print("The " + noun3 + " was sure to go");
+		System.out.print(" The " + noun3 + " was sure to go");
 		
 		
 		
